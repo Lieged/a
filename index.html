@@ -15,9 +15,43 @@ particlesJS("particles-js", {"particles":{"number":{"value":80,"density":{"enabl
     <link rel="stylesheet" type="text/css" href="style.css">
 <link rel="shortcut icon" href="favicon (1).ico">
 
+<Script LANGUAGE="JavaScript">
+<!-- 
+var Message = "- Liege.tokyo -";
 
-    <title>L i e g e . t o k y o</title>
-  </head>
+var Leftspace = "    ";
+var Rightspace = "    ";
+
+var message1 = Leftspace + Message + Rightspace;
+var dir = "left";
+var speed = "50";
+
+function bounce(){
+
+	if (dir == "left"){
+
+		var message2 = message1.substring(2,message1.length) + "  ";
+		document.title = message2;
+		setTimeout("bounce()", speed);
+		message1 = message2;
+		if (message1.substring(0,1) == "-") dir="right";
+	}
+
+	else{
+
+		message2 = "  " + message1.substring(0,message1.length-2);
+		document.title = message2;
+		setTimeout("bounce()", speed);
+		message1 = message2;
+		if (message1.substring(message1.length-1,message1.length) == "-") dir="left";
+	}
+
+}
+
+bounce();
+// -->
+</Script>
+
 
   <body>
     <div id="thug">
@@ -33,9 +67,9 @@ text-decoration: none;
 
 <br>
 
- |<a href="https://twitter.com/korukuchan" font face="monospace" style="color:#BEBEBE" target="_blank">Twitter</a>|
-<a href="http://steamcommunity.com/profiles/76561198316253560" font face="monospace" style="color:#BEBEBE" target="_blank">Steam</a>|
-<a href="https://selly.gg/@Lieged" font face="monospace" style="color:#BEBEBE" target="_blank">Selly</a>|
+ <a href="https://twitter.com/korukuchan" font face="monospace" style="color:#BEBEBE" target="_blank">Twitter</a>
+<a href="http://steamcommunity.com/profiles/76561198316253560" font face="monospace" style="color:#BEBEBE" target="_blank">Steam</a>
+<a href="https://selly.gg/@Lieged" font face="monospace" style="color:#BEBEBE" target="_blank">Selly</a>
 </span></center>
 
   <div class="scroll-left">
