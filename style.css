@@ -7,7 +7,7 @@
 }
 
 body {
-  color: #603336;
+  color: #ffffff;
   background-color: #000000;
   top: 50%;
   left: 50%;
@@ -27,7 +27,7 @@ video {
   transition: 1s opacity;
 }
 #title {
-  color: #603336;
+  color: #ffffff;
   font-size: 32px;
   font-family: 'thugtitle', sans-serif;
   padding-bottom: 10px;
@@ -65,7 +65,7 @@ video {
 }
 
 #menu li {
-  color: #603336;
+  color: #ffffff;
   display: inline-block;
 
   width: 90px;
@@ -82,7 +82,7 @@ video {
 }
 
 #menu a:hover {
-  background: #603336;
+  background: #ffffff;
 }
 
 .sub-menu {
