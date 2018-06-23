@@ -1,8 +1,92 @@
 
 <html>
-  <head>
- <link href="stylesheet.css" rel="stylesheet" type="text/css">
-<link rel="shortcut icon" href="favicon (1).ico">
+  </head>
+<body oncontextmenu="return false;">
+<script language="JavaScript">
+  window.onload = function() {
+    document.addEventListener("contextmenu", function(e){
+      e.preventDefault();
+    }, false);
+    document.addEventListener("keydown", function(e) {
+    //document.onkeydown = function(e) {
+      // "I" key
+      if (e.ctrlKey && e.shiftKey && e.keyCode == 73) {
+        disabledEvent(e);
+      }
+      // "J" key
+      if (e.ctrlKey && e.shiftKey && e.keyCode == 74) {
+        disabledEvent(e);
+      }
+      // "S" key + macOS
+      if (e.keyCode == 83 && (navigator.platform.match("Mac") ? e.metaKey : e.ctrlKey)) {
+        disabledEvent(e);
+      }
+      // "U" key
+      if (e.ctrlKey && e.keyCode == 85) {
+        disabledEvent(e);
+      }
+      // "F12" key
+      if (event.keyCode == 123) {
+        disabledEvent(e);
+      }
+    }, false);
+    function disabledEvent(e){
+      if (e.stopPropagation){
+        e.stopPropagation();
+      } else if (window.event){
+        window.event.cancelBubble = true;
+      }
+      e.preventDefault();
+      return false;
+    }
+  };
+</script>
+	<div class="bloody">
+		<p>
+	
+			
+			
+			
+			
+888      d8b                            
+888      Y8P                            
+888                                     
+888      888  .d88b.   .d88b.   .d88b.  
+888      888 d8P  Y8b d88P"88b d8P  Y8b 
+888      888 88888888 888  888 88888888 
+888      888 Y8b.     Y88b 888 Y8b.     
+88888888 888  "Y8888   "Y88888  "Y8888  
+                           888          
+                      Y8b d88P          
+                       "Y88P"    
+                                         </p>
+	</div>
+	<p></p><center>
+	<div class="css-typing">
+	<p style="color:rgb(255, 255, 255);"> <br>
+	<p><a href="https://twitter.com/nichelas" target="_blank">twitter</a></p>
+	<p><a href="https://instagram.com/isel" target="_blank">instagram</a></p>
+
+</center>
+	</div>
+	</div>
+	<div class="animated fadeInDown">
+		<audio autoplay loop id="player">
+			<source src="video/music.mp3" />
+				<script>
+					var audio = document.currentScript.parentElement;
+					audio.volume = 0.2;
+				</script>
+        </audio>
+	</div>
+	
+	<body bgcolor="#000000"> 
+	
+
+</pre></font>
+</body>
+
+
 
 <script language="JavaScript">
 <!-- 
@@ -20,42 +104,6 @@ window.setTimeout("Scroll()", speed);
 Scroll();
 -->
 </script>
-
-
-<div class="bloody">
-		<p>
-
-	<pre>		
-888      d8b                            
-888      Y8P                            
-888                                     
-888      888  .d88b.   .d88b.   .d88b.  
-888      888 d8P  Y8b d88P"88b d8P  Y8b 
-888      888 88888888 888  888 88888888 
-888      888 Y8b.     Y88b 888 Y8b.     
-88888888 888  "Y8888   "Y88888  "Y8888  
-                           888          
-                      Y8b d88P          
-                       "Y88P"  
-		       <pre>
-                                         </p>
-	</div>
-	<p></p><center>
-	<div class="css-typing">
-	<p style="color:rgb(255, 255, 255);"> <br>
-
-</center>
-	</div>
-	</div>
-	<div class="animated fadeInDown">
-		<audio autoplay loop id="player">
-			<source src="video/music.mp3" />
-				<script>
-					var audio = document.currentScript.parentElement;
-					audio.volume = 0.2;
-				</script>
-        </audio>
-	
 
 
 
@@ -104,8 +152,7 @@ document.onkeydown = function (event) {
 </script>
 	
 
-</div>
 
+<!-- Mirrored from zeb.by/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 08 Apr 2018 21:10:32 GMT -->
+</html>
 
-
-  </body>
