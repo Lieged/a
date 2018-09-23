@@ -165,8 +165,28 @@ document.onkeydown = function (event) {
 /////////////////////end///////////////////////
 </script>
 	
+ <script>
+    update_clock();
 
+    function update_clock() {
+        var currentTime = new Date(),
+            hours = currentTime.getHours(),
+            minutes = currentTime.getMinutes();
+        seconds = currentTime.getSeconds();
+        if (minutes < 10) {
+            minutes = "0" + minutes;
+        }
+        if (seconds < 10) {
+            seconds = "0" + seconds;
+        }
 
-<!-- Mirrored from zeb.by/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 08 Apr 2018 21:10:32 GMT -->
+        var clock_element = document.getElementById("clock");
+
+        clock_element.innerHTML = hours + " : " + minutes + " : " + seconds;
+    }
+    setInterval(update_clock, 1000);
+
+</script>
+
 </html>
 
